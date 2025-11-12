@@ -83,13 +83,13 @@ def make_pdf(fileName):
     
 
     c = canvas.Canvas(fileName, pagesize=letter)
-    img = ImageReader(os.path.dirname(__file__) + os.sep + 'A.jpg')
+    img = ImageReader(os.path.dirname(__file__) + os.sep + 'V.jpg')
     make_page(c, img, 1, 20, False)
     c.showPage()    # Starts a new page
-    img = ImageReader(os.path.dirname(__file__) + os.sep + 'B.jpg')
+    img = ImageReader(os.path.dirname(__file__) + os.sep + 'S.jpg')
     make_page(c, img, 1, 20, False)
     c.showPage()    # Starts a new page
-    img = ImageReader(os.path.dirname(__file__) + os.sep + 'C.jpg')
+    img = ImageReader(os.path.dirname(__file__) + os.sep + 'N.jpg')
     make_page(c, img, 1, 10, True)
     
     c.save()
