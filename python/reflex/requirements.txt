@@ -1,0 +1,7 @@
+#pip install -r requirements.txt
+
+#for clipboard
+pyperclip
+
+#for pdf
+reportlab
